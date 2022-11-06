@@ -310,7 +310,6 @@ nav ul li a{
     border-radius: 300px;
 }
 
-
 .galleryContainer .archiveLinks h3{
     color: whitesmoke !important;
     font-size: 1.5rem;
@@ -404,6 +403,7 @@ nav ul li a{
     }
 }
 
+
 /* 8. Footer Styles
    ========================= */
 footer{
@@ -493,5 +493,4 @@ footer{
     .contact{
         padding: 0;
     }
-
 }
