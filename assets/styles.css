@@ -1,0 +1,497 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+
+
+/* 1. Global Styles
+   2. Typographical Styles
+   3. Header Styles
+   4. Current/samplePage Styles
+   5. About Styles
+   6. Archive Styles
+   7. Team Styles
+   8. Footer Styles
+   ========================= */
+
+
+/* 1. Global Styles 
+=========================*/
+html { box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+html{
+    background-color: whitesmoke;
+    color: orangered;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+
+main img{
+    width: 100%;
+    padding: 0.55rem;
+}
+
+.section{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.sectionReverse{
+    background-color: orangered;
+    color: whitesmoke;
+    padding: 3rem auto;
+}
+
+.titleAndName{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.artistAbout{
+    margin:2rem 0 5rem 0;;
+}
+
+.artistAbout ul{
+    min-height: 10vh;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.artistAbout ul li a{
+    color: orangered;
+}
+
+.container{
+    width: 100%;
+}
+
+@media only screen and (min-width: 800px){
+    .container{
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+
+/* 2. Typographical Styles
+========================= */
+h1, h2, h3, h4, .artistLinks{
+    text-align: center;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+/* logo text */
+h1, h2{
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5rem;
+    padding: 2rem 3rem;
+}
+
+/* show name and section header */
+h3{
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: flex;
+    justify-content: center;
+}
+
+/* artist name */
+h4{
+    font-size: 2rem;
+    text-transform: uppercase;
+    word-spacing: .5rem;
+    margin: .5rem 0 .25rem;
+}
+
+/* all p styles */
+p{
+    font-size: 2rem;
+    text-transform: capitalize; 
+    line-height: 1.5;
+    padding: 0 2rem;
+    word-spacing: .25rem;
+    text-align: justify;
+}
+
+a{
+    text-decoration: none;
+    color: orangered;
+}
+
+/* artist site and ig */
+.artistLinks{
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 2rem;
+    letter-spacing: .25rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5rem;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 800px){
+    h3{
+        font-size: 2.5rem;
+    }
+    h4{
+        font-size: 2.5rem;
+    }
+}
+
+/* 3. Header Styles 
+========================= */
+header{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+}
+
+header .logo{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.whiteFrond{
+    display: none;
+}
+
+header .logo  img{
+   height: 21rem;
+   margin: 1.5rem;
+}
+
+nav {
+    width: 100%;
+    background-color: orangered;
+    display: flex;
+}
+
+nav ul{
+    min-width: 90%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 1rem 0;
+    margin-top: auto;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    line-height: 1.5;
+    letter-spacing: .25rem;
+    text-transform: uppercase;
+}
+
+
+/* Desk Top Header  Styles*/
+@media only screen and (min-width: 800px){
+    header{
+        background-color: orangered;
+        position: relative;
+    }
+
+    .logo{
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    header .logo h1, header .logo h2{
+        color: whitesmoke;
+        font-size: 2rem;
+    }
+
+    .whiteFrond{
+        display: initial;
+    }
+
+    .redorangeFrond{
+        display: none;
+    }
+
+    nav {
+        position:fixed; 
+        top:0;
+        z-index: 1;
+    }
+
+    nav ul{
+        width: 80%;
+    }
+
+    nav ul li a{
+        opacity: 1;
+        font-weight: 800;
+        letter-spacing: .5rem;
+    }
+
+    header .logo h1, header .logo h2{
+        font-size: 4rem;
+    }
+}
+
+
+/*4. Current/samplePage Styles 
+=========================*/
+.imgList img{
+    border-radius: 20px;
+}
+
+
+/* 4. About Styles 
+=========================*/
+
+#about{
+   
+}
+
+#about h3{
+    font-size: 2rem;
+}
+
+.about{
+    padding-bottom: 5vh;
+}
+
+
+/* 6. Archive Styles
+========================= */
+.galleryContainer{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 6rem;
+}
+
+.galleryItem{
+    background-color: orangered;
+    color: whitesmoke;
+    max-width: 400px;
+    padding: 2.5rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.galleryItem img{
+    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+    border-radius: 300px;
+}
+
+
+.galleryContainer .archiveLinks h3{
+    color: whitesmoke !important;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    letter-spacing: 0;
+    padding-bottom: 0.5rem;
+}
+
+.archiveLinkText{
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.moreSpace{
+    margin-bottom: 6rem;
+}
+
+
+/* 7. Team Styles 
+=========================*/
+.teamGallery{
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 6rem;
+    margin: 0 auto;
+}
+
+.teamCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem 3rem; 
+}
+
+.nameCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+
+}
+
+.teamCard img{
+    max-height: 150px;
+    max-width: 150px;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+}
+
+.teamP{
+    margin-top: 1rem;
+    padding: 0;
+}
+
+@media only screen and (min-width: 800px){
+    .teamCard{
+        background-color: whitesmoke;
+        color: orangered;
+        border-radius: 30px;
+        max-width: 800px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+        padding: 1rem 3rem; 
+        margin: 2rem;
+    }
+
+    .nameCard{
+        flex-direction: column-reverse;
+        margin: 1rem;
+    }
+
+    .teamP{
+        padding:2rem;
+    }
+
+    #prettyKitty{
+        flex-direction: row;
+    }
+    
+    #kittyPretty{
+        flex-direction: row-reverse;
+    }
+}
+
+/* 8. Footer Styles
+   ========================= */
+footer{
+    display: grid;
+}
+
+.footerReverse{
+    background-color: orangered;
+    color: whitesmoke;
+}
+
+.footerStuff, .footerReverse .footerStuff{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 2rem auto;
+}
+
+.contact, .footerReverse .contact{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.contact img, .footerReverse .contact img{
+    padding: .5rem;
+}
+
+.social, .footerReverse .social{
+    max-width: 4rem;
+    height: auto;
+}
+
+.footerP, .footerReverse .footerP{
+    font-size: 1.5rem;
+    text-align: center;
+    flex-grow: 3;
+    margin: 1rem;
+    padding: 0;
+    flex-grow: 3;
+}
+
+.footerP a{
+    text-decoration: none;
+    color: orangered;
+    size: 1.75rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .25rem;
+}
+
+.footerP a:hover{
+    background-color: orangered;
+    color: whitesmoke;
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.footerReverse a {
+    color: whitesmoke;
+}
+
+.footerReverse a:hover{
+    background-color: whitesmoke;
+    color: orangered;
+}
+
+@media only screen and (min-width: 800px){
+
+    footer{
+        height: 10vh;
+    }
+
+    .footerStuff, .footerReverse .footerStuff{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .footer p{
+        padding: 0;
+        margin: 0;
+    }
+
+    .contact{
+        padding: 0;
+    }
+
+}
