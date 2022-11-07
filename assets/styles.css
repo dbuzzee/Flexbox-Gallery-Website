@@ -17,6 +17,12 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 =========================*/
 html { box-sizing: border-box;}
 
+*{
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+
 *, *:before, *:after {box-sizing: inherit}
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
@@ -24,10 +30,7 @@ html { box-sizing: border-box;}
 html{
     background-color: whitesmoke;
     color: orangered;
-    font-family: 'Alumni Sans Pinstripe', sans-serif;
-    font-size: 62.5%;
-    margin: 0;
-    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 main img{
@@ -119,6 +122,7 @@ h3{
 /* artist name */
 h4{
     font-size: 2rem;
+    font-weight: 400;
     text-transform: uppercase;
     word-spacing: .5rem;
     margin: .5rem 0 .25rem;
@@ -127,12 +131,11 @@ h4{
 /* all p styles */
 p{
     font-size: 2rem;
+    font-weight: 400;
     text-transform: capitalize; 
     line-height: 1.5;
     padding: 0 2rem;
-    word-spacing: .25rem;
-    text-align: justify;
-    font-weight: 600;
+    text-align: center;
 }
 
 a{
@@ -149,6 +152,13 @@ a{
     letter-spacing: 1.5rem;
     text-decoration: none;
 }
+
+@media only screen and (min-width:480px){
+    p{
+    text-align: justify;
+    }
+}
+
 
 @media only screen and (min-width: 800px){
     h3{
@@ -195,7 +205,7 @@ nav ul{
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin: 0 auto;
     padding: 1rem 0;
@@ -206,12 +216,18 @@ nav ul li a{
     text-decoration: none;
     color: whitesmoke;
     font-size: 2rem;
-    padding: 0 1.5rem;
+    font-weight: 600;
+    padding: .5rem 2rem;
     line-height: 1.5;
     letter-spacing: .25rem;
     text-transform: uppercase;
 }
 
+@media only screen and (min-width: 480px){
+    nav ul{
+        justify-content: space-evenly;
+    }
+}
 
 /* Desk Top Header  Styles*/
 @media only screen and (min-width: 800px){
@@ -355,7 +371,6 @@ nav ul li a{
     flex-direction: column;
     justify-content: center;
     padding: 1rem;
-
 }
 
 .teamCard img{
@@ -450,17 +465,17 @@ footer{
 
 .footerP a{
     text-decoration: none;
-    color: orangered;
-    size: 1.75rem;
-    text-transform: uppercase;
-    font-weight: 500;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: .5rem .5rem;
+    line-height: 1.5;
     letter-spacing: .25rem;
+    text-transform: uppercase;
 }
 
 .footerP a:hover{
     background-color: orangered;
     color: whitesmoke;
-    padding: .5rem;
     border-radius: 5px;
 }
 
